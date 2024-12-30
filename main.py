@@ -13,7 +13,7 @@ def translate(word):
     return result
 
 
-bot = telebot.TeleBot('7778838654:AAH2O2ur-pDT68aCeT3WFDOtt3lG1uaQEKw')
+bot = telebot.TeleBot('')
 
 
 @bot.message_handler(commands=['start'])
