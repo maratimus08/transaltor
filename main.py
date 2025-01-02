@@ -1,6 +1,7 @@
 import json
 import requests
 import telebot
+import os
 
 
 def translate(word):
@@ -13,7 +14,7 @@ def translate(word):
     return result
 
 
-bot = telebot.TeleBot('')
+bot = telebot.TeleBot(os.getenv('TELEGRAM_TOKEN'))
 
 
 @bot.message_handler(commands=['start'])
